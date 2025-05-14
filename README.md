@@ -1,4 +1,4 @@
-# 🧬 Clinical Trials Processing & Modality/Target Analysis
+# Clinical Trials Processing & Modality/Target Analysis
 
 ## 📑 Project Overview
 This project processes clinical trial data related to specific diseases (e.g., Familial Hypercholesterolemia), enriches it with modality and biological target information, and provides structured quantitative summaries, insightful qualitative trends, and visual analytics.
@@ -45,7 +45,7 @@ Most frequently explored therapeutic modalities.
 
 ### Top 10 Biological Targets
 Most commonly targeted molecules or pathways.  
-![Top 10 Biological Targets](images/top_10_biological_targets.png)
+![Top 10 Biological Targets](images/top_10_targets.png)
 
 ### Trial Duration Distribution
 Distribution of trial lengths across studies.  

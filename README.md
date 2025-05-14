@@ -53,7 +53,7 @@ Distribution of trial lengths across studies.
 
 ### Median Trial Duration Over Time
 How the length of trials has changed across years.  
-![Median Trial Duration Over Time](images/median_trial_duration_over_time.png)
+![Median Trial Duration Over Time](images/trial_duration_trend_over_time.png)
 
 ---
 

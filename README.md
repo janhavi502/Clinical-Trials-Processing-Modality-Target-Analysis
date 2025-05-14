@@ -85,33 +85,57 @@ How the length of trials has changed across years.
 
 ---
 
-# Setup Instructions
+# 🛠️ Setup Instructions
 
-1. Environment Setup
-
-- Recommended: Use Google Colab or local Jupyter Notebook.
-- Python version: >= 3.8
-- Install required packages: pip install pandas numpy matplotlib seaborn openai scikit-learn
-- You also need an OpenAI API Key to dynamically enrich the interventions with modality/target information.
-    import openai
+### 1. Environment Setup
+- Recommended: Use **Google Colab** or a local **Jupyter Notebook**.
+- **Python version**: >= 3.8
+- Install required packages:
+  ```bash
+  pip install pandas numpy matplotlib seaborn openai scikit-learn
+  ```
+- Set up your OpenAI API Key (required for enrichment):
+  ```python
+  import openai
   openai.api_key = "YOUR-OPENAI-API-KEY"
+  ```
 
 ---
 
-# 🚀 How to Run
-1. Clone the repo.
-2. Open `ClinicalTrials_With_OpenAI_Final.ipynb` in Google Colab.
-3. Install required libraries.
-4. Execute the notebook sequentially.
+# 🚀 How to Run the Project
+
+1. Clone or download the repository.
+2. Open `ClinicalTrials_With_OpenAI_Final.ipynb` in **Google Colab** or **Jupyter Notebook**.
+3. Install required libraries if not already installed.
+4. Execute the notebook sequentially from top to bottom:
+   - Fetch trials
+   - Filter based on criteria
+   - Enrich interventions using OpenAI
+   - Generate quantitative summary and visualizations
+   - Derive qualitative insights
 
 ---
-# How to Modify the Disease/Indication
-1. Open the main notebook (ClinicalTrials_With_OpenAI_Final.ipynb).
-2. Find the disease setting (Step 1):
-   disease = "Familial Hypercholesterolemia"   #Change this line
-3. Replace "Familial Hypercholesterolemia" with any disease name, e.g., "Breast Cancer", "Asthma", etc.
-4. Re-run all the cells sequentially to fetch, filter, enrich, and generate new visualizations and summaries for the new disease.
+
+# 🧬 How to Modify the Disease/Indication
+
+1. Open the main notebook: `ClinicalTrials_With_OpenAI_Final.ipynb`.
+2. Locate the disease configuration section (Step 1):
+   ```python
+   disease = "Familial Hypercholesterolemia"
+   ```
+3. Change the disease name.  
+   Examples:
+   - `"Breast Cancer"`
+   - `"Asthma"`
+   - `"Hypertension"`
+4. After changing the disease name, **re-run all cells** sequentially.
+5. The pipeline will automatically:
+   - Fetch trials for the new disease
+   - Filter, enrich, and generate updated summaries
+   - Produce new visualizations and qualitative insights
+
 ---
+
 
 # 📬 Contact
 Feel free to reach out for questions or collaborations!  

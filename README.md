@@ -85,12 +85,32 @@ How the length of trials has changed across years.
 
 ---
 
+# Setup Instructions
+
+1. Environment Setup
+
+- Recommended: Use Google Colab or local Jupyter Notebook.
+- Python version: >= 3.8
+- Install required packages: pip install pandas numpy matplotlib seaborn openai scikit-learn
+- You also need an OpenAI API Key to dynamically enrich the interventions with modality/target information.
+    import openai
+  openai.api_key = "YOUR-OPENAI-API-KEY"
+
+---
+
 # 🚀 How to Run
 1. Clone the repo.
 2. Open `ClinicalTrials_With_OpenAI_Final.ipynb` in Google Colab.
 3. Install required libraries.
 4. Execute the notebook sequentially.
 
+---
+# How to Modify the Disease/Indication
+1. Open the main notebook (ClinicalTrials_With_OpenAI_Final.ipynb).
+2. Find the disease setting (Step 1):
+   disease = "Familial Hypercholesterolemia"   #Change this line
+3. Replace "Familial Hypercholesterolemia" with any disease name, e.g., "Breast Cancer", "Asthma", etc.
+4. Re-run all the cells sequentially to fetch, filter, enrich, and generate new visualizations and summaries for the new disease.
 ---
 
 # 📬 Contact
